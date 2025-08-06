@@ -78,6 +78,16 @@ $query = mysqli_query($con, $sql);
                                 <td><?= $row['usuario'] ?></td>
                                 <td><?= $row['clave'] ?></td>
                                 <td><?= $row['email'] ?></td>
+
+                                 <td> <a href="update.php?id=<?=$row['id'] ?>" class="btn btn-sm btn-warning">Editar</a></td>
+
+                            <td> <a href="delete.php?id=<?=$row['id'] ?>" class="btn btn-sm btn-danger">Eliminar</a></td>
+
+
+
+
+
+
                             </tr>
                         <?php endwhile; ?>
                     </tbody>
